@@ -9,7 +9,7 @@ const model = new ChatGoogleGenerativeAI({
 
 const messages = [
     new SystemMessage("Translate the following from English into hindi"),
-    new HumanMessage("hi!"),
+    new HumanMessage("hi! this is me Arpit Solanki"),
 ];
 const result2 = await model.invoke(messages);
 console.log(result2);
@@ -17,10 +17,3 @@ console.log(result2);
 
 
 
-// 🚀 LOGIC: Use the imported client to perform actions.
-async function main() {
-    const result = await llm.invoke("what you think about elon");
-    console.log(result.content);
-}
-
-main();
